@@ -1,0 +1,9 @@
+#!/bin/sh
+cat ~/git-token
+git config pull.rebase true
+git pull
+git add .
+git commit -m "update$RANDOM"
+git pull
+git push
+echo "\033[1;4m  Attempt to GitPush finish\033[0m"
