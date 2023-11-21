@@ -1,6 +1,0 @@
-#!/bin/sh
-compaudit | xargs chown -R "$(whoami)"
-compinit -u
-compaudit | xargs chmod go-w
-cd /usr/local
-sudo chown -R root:0 * 

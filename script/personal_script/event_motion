@@ -1,3 +1,0 @@
-#!/bin/sh
-whiptail --msgbox "CAMERA COULOIR MOUVEMENT DETECTE" 10 40
-

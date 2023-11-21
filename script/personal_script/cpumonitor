@@ -1,6 +1,0 @@
-#!/bin/sh
-while true
-do
-    sensors
-    sleep 1s
-done

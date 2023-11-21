@@ -1,2 +1,0 @@
-#!/bin/sh
-sudo python3 ~/tools/kickthemout/kickthemout.py $1 $2

@@ -1,3 +1,0 @@
-#!/bin/sh
-container="$(docker ps -a | awk '{ print $2}' | sed '1d'|head -n1)"
-docker run -it --entrypoint /bin/bash $container 

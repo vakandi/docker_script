@@ -1,2 +1,0 @@
-#!/bin/sh
-bash -c "$(curl grademe.fr)"

@@ -24,16 +24,16 @@ service mariadb restart
 service ssh restart
 
 mariadb -u root <<EOF
-CREATE USER 'DBuser'@localhost IDENTIFIED BY 'HSockgYMmyXX21*';
+CREATE USER 'DBuser'@localhost IDENTIFIED BY 'password';
 CREATE DATABASE hotel;
 GRANT ALL PRIVILEGES ON *.* TO 'DBuser'@localhost IDENTIFIED
-BY 'HSockgYMMyXX21*';
-GRANT ALL PRIVILEGES ON hotel.* TO 'DBuser'@'%' IDENTIFIED BY 'HSockgYMMyXX21*';
+BY 'password;
+GRANT ALL PRIVILEGES ON hotel.* TO 'DBuser'@'%' IDENTIFIED BY 'password';
 FLUSH PRIVILEGES;
 EOF
 
 MYSQL_USER="DBuser"
-MYSQL_PASSWORD="HSockgYMmyXX21*"
+MYSQL_PASSWORD="password"
 DB_TABLE="users"
 db_name="hotel"
 
